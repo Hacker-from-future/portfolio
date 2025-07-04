@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jagreet's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1-removebg-preview.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>I am <span> <br>Jagreet Goswami</span></h1>
+        </div>
+    </div>
+</div>
+</div>
+<!-- -----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/j4.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am Jagreet Goswami , currently pursuing B.Tech in Computer Science and Engineering. Knowledge is the key to be successful. So fueled by curiosity and driven by knowledge I am here to showcase my skills to the world and tell the world that yes i am ready for the challenges i will face to achieve my goals.  </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding Languages:<br></span>JAVA,C,JAVASCRIPT</li>
+                         <li><span>Web Development:<br> </span>Web App Development</li>
+                         <li><span>Soft Skills:<br> </span>Leadership,Problem Solving,Teamwork,Communication</li>
+                         <li><span>Languages:<br> </span> English, Hindi, Bengali</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2008-2024:<br> </span>Welkin National School(ICSE & ISC) </li>
+                        <li><span>10th Marks:<br> </span>77.8%</li>
+                         <li><span>12th Marks:<br> </span>81.75%</li>
+                         <li><span>2024-2028:<br> </span>JIS University (B.Tech in CSE)</li>
+                         <li><span>Semester:<br> </span>2nd</li>
+                         <li><span>SGPA:<br> </span>8.65</li>
+                         
+                    </ul>
+                </div>
+                <div class="tab-contents " id="Projects">
+                    <ul>
+                        <li><span>Morse Code Converter: <br></span>Convert Alphanumeric into morse code and vice versa.</li>
+                         <li><span>FreelancingBids: <br> </span>Freelancing website with down-bidding system.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------------------------projects---------->
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+  <a href="https://curious-mallard-200.convex.app/" target="_blank">
+    <img src="images/fb-removebg-preview.png" alt="Project 1 Screenshot" />
+    <h3>FreelanceBid </h3>
+    <p>A dynamic site with a down bidding system built using HTML, CSS, JS.</p>
+  </a>
+</div>
+
+ <div class="project-card">
+  <a href="https://hacker-from-future.github.io/morsecode/" target="_blank">
+    <img src="images/morsecode-removebg-preview.png" alt="Project 1 Screenshot" />
+    <h3>MorseCode Converter </h3>
+    <p>A website to convert Alphanumeric to morsecode and vice versa</p>
+  </a>
+</div>
+  </div>
+</section>
+<!----------------resume----------------->
+
+<section id="resume">
+  <h2>My Resume</h2>
+  <p>You can download my resume by clicking the button below.</p>
+  <a href="images/Jagreet_Goswami_Resume[1].pdf" download class="resume-button">
+    📄 Download Resume
+  </a>
+</section>
+
+<!----------contact---------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-envelope"></i> djjagreet@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 86976 91009</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/jagreet.goswami/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/itz_me_djjagreet/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jagreet-goswami-68b45b326/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Hacker-from-future"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+       <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your name" required>
+         <input type="email" name="Email" placeholder="Your Email" required>
+         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+         <button type="submit" class="btn">Submit</button>
+       </form>
+       <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Jagreet Goswami</p>
+  </div>
+  
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+
+
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzg2xt9QxL1oUmw1lDAXggafyObSPnFUleq8USHQRg-cu2BlrgJdY6igZ-ZDbsbMfOwNw/exec';
+  const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
